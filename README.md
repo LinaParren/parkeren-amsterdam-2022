@@ -17,7 +17,8 @@ View my wiki <a href ="https://github.com/LinaParren/tech-track-22-23f/wiki">her
 It is not easy to find a suited parking spot. As a resident of Amsterdam, I know how annoying it is to find a parking spot here. Not only is there never any room, it is also very expensive. This can startle you when you pull up to a parking garage and see the price you have to pay per hour. I always like to be prepared and I would love to have a map that helps me. <br> <br>
 Providing the user with all this information is a first step. However, making this information clear is key. There are different ways of doing this. You can show the user a map, indicating where individual parking zones are and what the rules are with that zone. You can choose to give them an indication of what the cost would be. That is what I am going to work with. <br>
 
-I am going to make a map that covers Amsterdam. The Municipality of Amsterdam determined six different zones, each with their own cost per hour. I will be using these zones to show to the user. When a zone is selected, it will show you these zones on the map. You can select the zones per price.
+I am going to make a map that covers Amsterdam. The Municipality of Amsterdam determined six different zones, each with their own cost per hour. I will be using these zones to show to the user. When a zone is selected, it will show you these zones on the map. You can select the zones per price. <br>
+As an extra, I added a function where you enter the zone and the amount of hours you think you will be staying. It then calculates how much it is going to cost. That way, you know in advance how much it will cost you and there won't be any surprises. 
 
 <br>
 
@@ -27,6 +28,7 @@ This concept will be able to do a number of things to help the user.
 - Be able to click on the price for a zone
 - Show the selected zones on the map (with use of color)
 - Get indication of cost for parking in specific zone
+- Calculate how much you will be paying
 
 <br>
 
