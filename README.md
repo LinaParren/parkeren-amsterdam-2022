@@ -1,8 +1,12 @@
-# Hi 👋🏻
+# 👋🏻 Hi!
 
 Welcome to my very informative Readme.md !
 
 <br>
+
+## ✨ Final result
+Have a sneak peek at the final result!
+<img id="result" src="./images/result.png" alt="Final result">
 
 ## 🌍 Wiki
 View my wiki <a href ="https://github.com/LinaParren/tech-track-22-23/wiki">here</a>!
