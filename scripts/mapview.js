@@ -5,13 +5,6 @@ import json from "../tarieven.json" assert {type: "json"};
 // Make a map, using Leaflet. Put given coordinates in center and zoom to given view
 const map = L.map("map").setView([52.3702157, 4.8951679], 12);
 
-// L.tileLayer(urlTemplate, {
-//   noWrap: true,              //this is the crucial line!
-//   bounds: [
-//     [-90, -180],
-//     [90, 180]
-//   ]
-// }).addTo(map);
 
 // Load the map from OpenStreetMap
 L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
@@ -105,7 +98,20 @@ function changeCheckbox(event) {
 }
 
 
-// Easter egg, zoom to a cute village
+// Let user fill in numbers to calculate price
+// Code not complete, sum only accepts numbers with . as decimal sign
+const answer = document.querySelector("#answer");
+const buttonSum = document.querySelector("#answerbutton");
+buttonSum.addEventListener("click", sumPrice);
+
+function sumPrice() {
+  const price = parseFloat(document.querySelector("#prices").value);
+  const hours = parseInt(document.querySelector("#hour").value);
+  answer.textContent = ("Totaal: €" + (price * hours).toFixed(2));
+}
+
+
+// Zoom the map to a cute village when button is clicked
 const Limburg = document.querySelector("#Lim");
 Limburg.addEventListener("click", zoomLim);
 const Ams = document.querySelector("#Ams");
@@ -114,12 +120,13 @@ Ams.addEventListener("click", zoomAms);
 function zoomLim() {
   if (confirm("Je moet er wel voor naar een rustig dorpje in Limburg...") == true) {
     map.setView([51.170870781573484, 5.820799073861629], 16);
-    document.getElementById("Ams").style.display="inline";
-    document.getElementById("Lim").style.display="none";
-}}
+    document.getElementById("Ams").style.display = "inline";
+    document.getElementById("Lim").style.display = "none";
+  }
+}
 
 function zoomAms() {
   map.setView([52.3702157, 4.8951679], 12);
-  document.getElementById("Ams").style.display="none";
-  document.getElementById("Lim").style.display="inline";
+  document.getElementById("Ams").style.display = "none";
+  document.getElementById("Lim").style.display = "inline";
 }
