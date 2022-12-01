@@ -31,9 +31,9 @@ This concept will be able to do a number of things to help the user.
 ## ⚙️ Installation
 To install the project, you must follow the following steps. Make sure that you have a folder in which the project can be saved, and that you are currently in that folder. 
 
-1. Clone the Github locally on your computer. Put it in a suited folder, so you can find it again later. You can than locally look at and make changes to the repository.
+1. Clone the Github repository locally on your computer. Put it in a suited folder, so you can find it again later. You can than locally look at and make changes to the repository.
   ```sh
-  git clone https://github.com/LinaParren/tech-track-22-23.git
+  git clone https://github.com/LinaParren/tech-track-22-23f.git
   ```
 
 2. Install the NPM Packages to make sure everything works. With this command, the terminal will install every package in the repository. 
