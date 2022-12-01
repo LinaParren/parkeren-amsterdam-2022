@@ -51,7 +51,7 @@ To install the project, you must follow the following steps. Make sure that you 
 <br>
 
 ## 🪪 License
-Click here to view the <a href='https://github.com/LinaParren/matching_application/blob/main/LICENSE'>license</a>.
+Click here to view the <a href='https://github.com/LinaParren/tech-track-22-23f/blob/main/LICENSE'>license</a>.
 
 ## 📧 Contact
 Email address: lina.parren@hva.nl
