@@ -50,3 +50,6 @@ To install the project, you must follow the following steps. Make sure that you 
 
 ## 🪪 License
 Click here to view the <a href='https://github.com/LinaParren/matching_application/blob/main/LICENSE'>license</a>.
+
+## 📧 Contact
+Email address: lina.parren@hva.nl
