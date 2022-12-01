@@ -1,0 +1,125 @@
+* {
+	margin: 0;   
+	padding: 0;
+	color: black;
+  }
+
+
+/* FIRST SCREEN */
+#firstscreen {
+	height: 100vh;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+#firstscreen #logo {
+	width: 18em;
+	display: block;
+	padding-top: 5em;
+	padding-bottom: 3em;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+h2 {
+	font-size: 1.5em;
+	text-align: center;
+}
+
+p {
+	font-size: 1em;
+	text-align: center;
+}
+
+#arrowdown {
+	width: 3em;
+	display: block;
+	padding-top: 5em;
+	padding-bottom: 3em;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+/* SECOND SCREEN */
+#info section:first-of-type {
+	height: 20%;
+}
+
+#info section:nth-of-type(2) {
+	height: 70%;
+}
+
+#info section:last-of-type {
+	display: flex;
+	flex-direction: column;
+}
+
+#secondscreen #logo {
+	width: 12em;
+}
+
+#secondscreen {
+	display: flex;
+	height: 100vh;
+}
+
+#info {
+	display: flex;
+	flex-direction: column;
+	width: 30%;
+	padding-left: 2em;
+	padding-top: 1em;
+}
+
+#map { 
+	width: 70%;
+}
+
+#secondscreen p {
+	text-align: left;
+	margin-bottom: 1em;
+}
+
+/* Colors for the different zones */
+#zone1 {
+	color: #FF0000;
+}
+#zone2{
+	color: #FF9D00;
+}
+#zone3{
+	color: #F7E405;
+}
+#zone4{
+	color: #6CD800;
+}
+#zone5{
+	color: #0062FF;
+}
+#zone6{
+	color: #BE00EB;
+}
+
+
+input[type=checkbox] {
+	order: 2;
+	margin-left: 3em;
+}
+
+label {
+	display: flex;
+	margin-bottom: 1em;
+}
+
+
+/* Scroll function */
+#scroll {
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+}
+
+#scroll section {
+    scroll-snap-align: start;
+}

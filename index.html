@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="./images/favicon.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./styles/style.css">
+  <title>Parkeren in Amsterdam</title>
+
+  <!-- Needed to add Leaflet -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css"
+    integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14=" crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js"
+    integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg=" crossorigin=""></script>
+</head>
+
+
+<body>
+
+  <!-- Article that contains scroll function -->
+  <article id="scroll">
+
+
+    <!-- First section: introduction -->
+    <section id="firstscreen">
+
+      <img id="logo" src="./images/logo.png" alt="Logo Gemeente Amsterdam">
+
+      <h2>Op deze website vind je een overzicht van hoeveel euro het kost om te parkeren in Amsterdam, per zone per
+        uur.</h2>
+      <p>Scroll naar beneden om jouw gewenste zone te zoeken!</p>
+
+      <!-- Button, down to next screen -->
+      <img id="arrowdown" src="./images/arrowdown.png" alt="Arrow to next screen">
+
+      <p id="footer">Lina Parren, 2022</p>
+
+    </section>
+
+
+    <!-- Second section: choose zone and view map -->
+    <section id="secondscreen">
+
+      <!-- Left part: choose zone -->
+      <div id="info">
+
+        <section>
+          <img id="logo" src="./images/logo.png" alt="Logo Gemeente Amsterdam">
+        </section>
+
+        <section>
+        <!-- Checkboxes to choose zone -->
+        <p>Vink een prijs aan om de bijbehorende zones te bekijken</p>
+        <label id="zone1">
+          <input type="checkbox" value="7,50"> &euro;7,50 </label>
+        <label id="zone2">
+          <input type="checkbox" value="6,00"> &euro;6,00 </label>
+        <label id="zone3">
+          <input type="checkbox" value="4,50"> &euro;4,50 </label>
+        <label id="zone4">
+          <input type="checkbox" value="3,50"> &euro;3,50 </label>
+        <label id="zone5">
+          <input type="checkbox" value="2,50"> &euro;2,50 </label>
+        <label id="zone6">
+          <input type="checkbox" value="1,40"> &euro;1,40 </label>
+        </section>
+
+        <section>
+          <button type="button" id="Lim" onClick="zoomLim()">Gratis parkeren? Klik hier!</button>
+          <button type="button" id="Ams" onClick="zoomAms()" style="display:none">Terug naar Amsterdam</button>
+          <p id="footer">Lina Parren, 2022</p>
+        </section>
+
+      </div>
+
+      <!-- Right part: view map -->
+      <div id="map"></div>
+
+    </section>
+
+  </article>
+
+  <!-- Add script to load JavaScript -->
+  <script type="module" src="./scripts/mapview.js"></script>
+
+</body>
+
+</html>
