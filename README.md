@@ -1,6 +1,6 @@
 # 👋🏻 Hi!
 
-Welcome to my very informative Readme.md !
+Welcome to my Readme.md! It tells you about the concept itself, and a lot of other things.
 
 <br>
 
