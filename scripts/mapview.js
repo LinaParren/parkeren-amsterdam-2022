@@ -98,35 +98,30 @@ function changeCheckbox(event) {
 }
 
 
-// Let user fill in numbers to calculate price
-// Code not complete, sum only accepts numbers with . as decimal sign
-const answer = document.querySelector("#answer");
-const buttonSum = document.querySelector("#answerbutton");
-buttonSum.addEventListener("click", sumPrice);
-
-function sumPrice() {
-  const price = parseFloat(document.querySelector("#prices").value);
-  const hours = parseInt(document.querySelector("#hour").value);
-  answer.textContent = ("Totaal: €" + (price * hours).toFixed(2));
-}
-
-
-// Zoom the map to a cute village when button is clicked
+// Easter egg, zoom to my current addresses
+// const Amsterdam = document.querySelector("#Ams");
+// Amsterdam.addEventListener("click", zoomAms);
 const Limburg = document.querySelector("#Lim");
 Limburg.addEventListener("click", zoomLim);
 const Ams = document.querySelector("#Ams");
 Ams.addEventListener("click", zoomAms);
 
+// function zoomAms() {
+//   map.setView([52.33565198160394, 4.88310030595754], 18);
+// }
 function zoomLim() {
   if (confirm("Je moet er wel voor naar een rustig dorpje in Limburg...") == true) {
     map.setView([51.170870781573484, 5.820799073861629], 16);
-    document.getElementById("Ams").style.display = "inline";
-    document.getElementById("Lim").style.display = "none";
-  }
+    document.getElementById("Ams").style.display="inline";
+    document.getElementById("Lim").style.display="none";
+}
 }
 
 function zoomAms() {
   map.setView([52.3702157, 4.8951679], 12);
-  document.getElementById("Ams").style.display = "none";
-  document.getElementById("Lim").style.display = "inline";
+  document.getElementById("Ams").style.display="none";
+  document.getElementById("Lim").style.display="inline";
 }
+
+
+ 

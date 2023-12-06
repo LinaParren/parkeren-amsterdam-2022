@@ -2,14 +2,14 @@
 	margin: 0;   
 	padding: 0;
 	color: black;
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 1em;
   }
 
 
 /* FIRST SCREEN */
 #firstscreen {
-	height: 100vh; 
+	height: 100vh;
+	margin-bottom: 0;
+	padding-bottom: 0;
 }
 
 #firstscreen #logo {
@@ -21,12 +21,13 @@
 	margin-right: auto;
 }
 
-#firstscreen h2 {
+h2 {
 	font-size: 1.5em;
 	text-align: center;
 }
 
-#firstscreen p {
+p {
+	font-size: 1em;
 	text-align: center;
 }
 
@@ -34,119 +35,51 @@
 	width: 3em;
 	display: block;
 	padding-top: 5em;
+	padding-bottom: 3em;
 	margin-left: auto;
 	margin-right: auto;
 }
 
 
 /* SECOND SCREEN */
-#secondscreen {
-	display: flex;
-	height: 100vh;
-}
-
-#info {
-	width: 30%;
-	padding-left: 2em;
-	padding-top: 1em;
-}
-
-#info #seclogo {
+#info section:first-of-type {
 	height: 20%;
 }
 
-#info #checkboxes {
-	height: 45%;
+#info section:nth-of-type(2) {
+	height: 70%;
 }
 
-#info #calculator {
-	height: 18%;
-	margin-bottom: 1em;
-}
-
-#info #buttons {
+#info section:last-of-type {
 	display: flex;
 	flex-direction: column;
-	margin-top: 3em;
-}
-
-#secondscreen #explanation {
-	text-align: left;
-	margin-bottom: 2em;
 }
 
 #secondscreen #logo {
 	width: 12em;
 }
 
-#calculator {
-	font-size: 0.8em;
-	text-align: left;
-	border: dashed 1px black;
-	width: 70%;
-	padding: 0.5em;
+#secondscreen {
+	display: flex;
+	height: 100vh;
 }
 
-#calculator input{
-	width: 10%;
-}
-
-#calculator p {
-	margin-bottom: 0.5em;
-}
-
-#calculator p:first-of-type {
-	text-decoration: underline;
-}
-
-#calculator button {
-	font-size: 0.8em;
-	margin-bottom: 1em;
-	padding: 0.5em;
-	border: solid 0.1em black;
-	border-radius: none;
-	background-color: white;
-}
-
-#buttons button {
-	width: 35%;
-	font-size: 0.5em;
-	margin-bottom: 1em;
-	border: solid 0.1em red;
-	border-radius: none;
-	background-color: white;
+#info {
+	display: flex;
+	flex-direction: column;
+	width: 30%;
+	padding-left: 2em;
+	padding-top: 1em;
 }
 
 #map { 
 	width: 70%;
 }
 
-#footer {
-	font-size: 0.5em;
-}
-
-input[type=checkbox] {
-	order: 2;
-	margin-left: 3em;
-}
-
-label {
-	display: flex;
+#secondscreen p {
+	text-align: left;
 	margin-bottom: 1em;
 }
-
-
-/* SCROLL */
-#scroll {
-    height: 100vh;
-    overflow-y: scroll;
-    scroll-snap-type: y mandatory;
-}
-
-#scroll section {
-    scroll-snap-align: start;
-}
-
 
 /* Colors for the different zones */
 #zone1 {
@@ -166,4 +99,27 @@ label {
 }
 #zone6{
 	color: #BE00EB;
+}
+
+
+input[type=checkbox] {
+	order: 2;
+	margin-left: 3em;
+}
+
+label {
+	display: flex;
+	margin-bottom: 1em;
+}
+
+
+/* Scroll function */
+#scroll {
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+}
+
+#scroll section {
+    scroll-snap-align: start;
 }
